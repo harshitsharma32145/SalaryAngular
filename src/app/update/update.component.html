@@ -1,0 +1,109 @@
+<p>Update!</p>
+<div class="example-container mt-5">
+    <form [formGroup]="reactive" (ngSubmit)="UpdateEmployee(reactive.value)">
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>companyName</mat-label>
+            <input matInput placeholder="companyName" formControlName="companyName">
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>companyddress</mat-label>
+            <input matInput placeholder="companyddress" formControlName="companyddress">
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>eMonth</mat-label>
+
+            <mat-select formControlName="eMonth">
+                <mat-option value="January">January</mat-option>
+                <mat-option value="Februray">Februray</mat-option>
+                <mat-option value="March">March</mat-option>
+                <mat-option value="April">April</mat-option>
+                <mat-option value="may">may</mat-option>
+                <mat-option value="june">june</mat-option>
+                <mat-option value="July">July</mat-option>
+                <mat-option value="August">August</mat-option>
+                <mat-option value="September">September</mat-option>
+                <mat-option value="October">October</mat-option>
+                <mat-option value="November">November</mat-option>
+                <mat-option value="December">December</mat-option>
+                
+            </mat-select>
+
+        </mat-form-field>
+
+
+        <mat-form-field  appearance="fill">
+            <mat-label>designation</mat-label>
+            <mat-select formControlName="designation">
+                <mat-option value="trainee">trainee</mat-option>
+                <mat-option value="employee">employee</mat-option>
+                <mat-option value="202hra5">hra</mat-option>
+            </mat-select>
+
+        </mat-form-field>
+        
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>employeeName</mat-label>
+            <input type="text" matInput placeholder="employeeName" formControlName="employeeName" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>uan</mat-label>
+            <input matInput placeholder="uan" formControlName="uan">
+        </mat-form-field>
+
+        <mat-form-field  appearance="fill">
+            <mat-label>pfno</mat-label>
+            <input type="text" matInput placeholder="pfno" formControlName="pfno" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>eYear</mat-label>
+            <mat-select formControlName="eYear">
+                <mat-option value="2023">2023</mat-option>
+                <mat-option value="2024">2024</mat-option>
+                <mat-option value="2025">2025</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>esino</mat-label>
+            <input matInput placeholder="esino" formControlName="esino">
+        </mat-form-field>
+
+      
+        <mat-form-field appearance="fill">
+            <mat-label>departmentName</mat-label>
+            <mat-select formControlName="departmentId" >
+                <mat-option *ngFor="let value of value" [value]="value.departmentId">{{value.departmentName}}</mat-option>
+             <!--  -->
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>bankName</mat-label>
+            <input matInput placeholder="bankName" formControlName="bankName" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>bankAccountNo</mat-label>
+            <input matInput placeholder="bankAccountNo" formControlName="bankAccountNo" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>basicPay</mat-label>
+            <input matInput placeholder="basicPay" formControlName="basicPay" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>hra</mat-label>
+            <input matInput placeholder="hra" formControlName="hra" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Save</button>
+    </form>

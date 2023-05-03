@@ -1,0 +1,101 @@
+<form [formGroup]="salaryrecord">
+    <div class="text-center">
+        <mat-form-field appearance="fill">
+            <mat-label> companyName</mat-label>
+            <input readonly matInput="companyName" formControlName="companyName">
+        </mat-form-field><br>
+
+        <mat-form-field appearance="fill">
+            <mat-label>companyddress</mat-label>
+            <input readonly matInput="companyddress" formControlName="companyddress">
+        </mat-form-field><br>
+        <h3 style="color: rgb(9, 0, 92);">PaySlip For: {{myDate | date:'yyyy-MM-dd'}}</h3>
+
+    </div>
+
+
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label> employeeName</mat-label>
+        <input readonly matInput="employeeName" formControlName="employeeName">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>uan</mat-label>
+        <input readonly matInput="uan" formControlName="uan">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+        <mat-label>emplopyeeId</mat-label>
+        <input readonly matInput="emplopyeeId" formControlName="emplopyeeId">
+    </mat-form-field>
+
+    <mat-form-field  appearance="fill">
+        <mat-label>pfno</mat-label>
+        <input readonly matInput="pfno" formControlName="pfno" required>
+    </mat-form-field>
+
+
+
+    <mat-form-field  appearance="fill">
+        <mat-label>designation</mat-label>
+        <input readonly matInput="designation" formControlName="designation" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label> doj</mat-label>
+        <input readonly matInput="doj" formControlName="doj">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>esino</mat-label>
+        <input readonly matInput="esino" formControlName="esino">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>departmentId</mat-label>
+        <input readonly matInput="departmentId" formControlName="departmentId" required>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+        <mat-label>bankName</mat-label>
+        <input readonly matInput="bankName" formControlName="bankName" required>
+    </mat-form-field>
+
+
+
+
+    <mat-form-field appearance="fill">
+        <mat-label>bankAccountNo</mat-label>
+        <input readonly matInput="bankAccountNo" formControlName="bankAccountNo" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>basicPay</mat-label>
+        <input readonly matInput="basicPay" formControlName="basicPay" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>hra</mat-label>
+        <input readonly matInput="hra" formControlName="hra" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>epf</mat-label>
+        <input readonly matInput="epf" formControlName="epf" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>esi</mat-label>
+        <input readonly matInput="esi" formControlName="esi" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>totalEarnings</mat-label>
+        <input readonly matInput="totalEarnings" formControlName="totalEarnings" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>totalDeduction</mat-label>
+        <input readonly matInput="totalDeduction" formControlName="totalDeduction" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>netSalary</mat-label>
+        <input readonly matInput="netSalary" formControlName="netSalary" required>
+    </mat-form-field>
+</form>
